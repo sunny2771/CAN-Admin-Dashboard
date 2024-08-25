@@ -1,0 +1,47 @@
+.dataTable {
+  height: 100%;
+
+  .dataGrid {
+    background: white;
+    padding: 20px;
+
+    .MuiDataGrid-row--borderBottom {
+      background: lightgray !important;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .action {
+      display: flex;
+      gap: 15px;
+
+      img {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+      }
+    }
+
+    .MuiDataGrid-cell {
+      border: none;
+
+      .status {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        color: white;
+        width: 120px;
+        height: 30px;
+        margin-top: 10px;
+      }
+    }
+  }
+}

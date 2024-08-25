@@ -1,0 +1,94 @@
+@import "../../styles/variables.scss";
+
+.pieChartBox {
+    padding: 7px 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            & span:nth-child(1) {
+                color: gray;
+                font-size: 14px;
+            }
+            
+            & div:nth-child(2) {
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+
+        .right {
+            .filter {
+                display: flex;
+                border: 1px solid $soft-color;
+                padding: 2px;
+                font-size: 12px;
+                border-radius: 5px;
+                align-items: center;
+                color: #685b5b;
+            }
+        }
+    }
+    .bottom {
+        height: 100%;
+        display: flex;
+        align-items: center;        
+           
+        .chart {
+            flex: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+        .statistics {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex: 2;
+
+            .stattisticsVal {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                justify-content: space-between;
+
+                .stattisticsInfo {
+                    display: flex;
+                    gap: 5px;
+                    
+                    .dot {
+                        border-radius: 50%;
+                        width: 10px;
+                        height: 10px;
+                    }
+
+                    .details {
+                        display: flex;
+                        flex-direction: column;
+
+                        & span:nth-child(1) {
+                            font-size: 12px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                .stattisticsName {
+                    font-size: 10px;
+                    color: gray;
+                }
+            }
+        }
+    }
+}

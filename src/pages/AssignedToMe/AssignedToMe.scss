@@ -1,0 +1,44 @@
+.assignedSection {
+    width: 100%;
+
+    .content {
+        background-color: white;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        padding: 5px 10px;
+        position: relative;
+        width: 100%;
+        height: 90.8vh;
+
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            
+            .heading {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                & span {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        hr {
+            border: none; /* Removes the default border */
+            border-top: 1px solid lightgray;
+            margin-bottom: 10px;
+        }
+        
+        .bottom {
+            overflow: hidden;
+            width: 100%;
+            
+        }
+    }
+}
