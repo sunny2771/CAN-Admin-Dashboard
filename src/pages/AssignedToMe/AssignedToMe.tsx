@@ -15,7 +15,7 @@ const AssignedToMe = () => {
         <hr />
         <div className="bottom">
           {/* Material table used for grouping the rows based on state - Admin, Evaluator and Moderator */}
-          {/* All filters are working */}
+          {/* All filters, pagination and drag & drop functionalities are working */}
           <MaterialTable />
         </div>
       </div>

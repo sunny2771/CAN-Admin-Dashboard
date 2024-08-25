@@ -96,7 +96,7 @@ const Opportunities = () => {
         <hr />
         <div className="bottom">
           {/* Mui data grid table has been used to show data */}
-          {/* All filters are working */}
+          {/* All filters, pagination functionalities are working */}
           <DataTable slug="users" columns={columns} rows={userRows} />
         </div>
       </div>
